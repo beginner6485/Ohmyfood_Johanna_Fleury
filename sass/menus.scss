@@ -1,0 +1,390 @@
+body
+{
+    font-family: 'Roboto','Shrikhand','arial';
+}
+
+h3
+{
+    font-family: 'Shrikhand' ;
+    padding-top: 20px;
+}
+
+h5
+{
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-bottom: #99E2D0 solid 2px;
+    width: 2em;
+}
+
+h6
+{
+    font-family: 'Shrikhand';
+    color: white;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-right: 20px;
+}
+
+.flex_header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.accl_logo {
+    width: 40%;
+    display: block;
+    margin:auto;
+    }
+
+.accl_menu{
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.accl_menu--under{
+    height: 250px;
+}
+
+.accl_menu--pic{
+    width: 100%;
+    object-fit: cover;
+}
+
+.accl_plats_entrees{
+    background-color: #F2F2F2;
+    border-radius: 12px 12px 12px 12px;
+    padding-left: 1em;
+    position: relative;
+    top: -50px;
+    border-radius: 20px 20px;
+}
+
+.--choix
+{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 11px 0px lightgrey;
+    height: 3.5em;
+    line-height: 1.5em;
+    width: 95%;
+    padding-left: 5px;
+    opacity: 0;
+    transition: transform 2s,margin-right 1s;
+    &:hover .check{
+        margin-right:0px;
+        transition: transform 2s,margin-right 1s;
+    }
+
+    &:hover .text2
+    {
+        width: 230px;
+    }
+
+    &:hover .validation
+    {
+        transition: transform 2s;
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.check
+{
+    display: inline-block;
+    margin-right: -70px;
+    background-color: #99E2D0;
+    width: 70px;
+    transition: transform 2s,margin-right 1s;
+    transition-timing-function: linear;
+  
+}
+
+@keyframes apparition {
+    from{
+        opacity:0;
+        margin-top: 5px;
+    }
+    to{
+        opacity:1;
+        margin-top: 0px;
+    }
+}
+
+.apparition1
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.apparition2
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.apparition3
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.apparition4
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.apparition5
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+.apparition6
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.apparition7
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+.apparition8
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+.apparition9
+{
+    animation-duration: 0.5s;
+    animation-name: apparition;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+}
+
+.flex1
+{
+    display: inline-block;
+    margin-top: 3px;
+    width: 80%;
+}
+
+.flex2
+{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+span.--text
+{
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+span.--prix
+{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 35%;
+    align-self: flex-end;
+    padding-bottom: 5px;
+}
+
+.fa-check-circle
+{
+    color: white;
+    position: relative;
+    top: 18px;
+    left: 35px;
+    transition: transform 1000ms;
+}
+
+.text1{
+    display: inline-block;
+    white-space: nowrap;  
+    width: 200px;
+    font-size: 1.1em;
+}
+
+.text2{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: lighter;
+    width: 300px;
+}
+ 
+.btn
+{
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: white;
+    box-shadow: -1px 8px 13px 1px lightgrey;
+    border-radius: 30px;
+    padding-top: 1em;
+    text-align: center;
+    width: 50%;
+    height: 2em;
+    margin: auto;
+    margin-top: 2em;
+    &:hover{
+    background: linear-gradient(lighten(#FF79DA,10%),lighten(#9356DC,10%));
+    box-shadow: -1px 8px 10px 1px grey;
+    }
+}
+
+
+#accl-footer
+{
+    background-color: rgba(0, 0, 0, 0.749);
+    padding-left: 1em;
+}
+
+
+.fa-utensils, .fa-hands-helping
+{
+    color: gray;
+    padding-right: 1em;
+
+}
+
+li
+{
+    list-style:none;
+    padding-left: 0em;
+    line-height: 1.5em;
+    font-size: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+.arrow{
+    color: black;
+}
+
+.element{
+    color: #F2F2F2;
+}
+
+#footer-space{
+    display: contents;
+}
+
+
+@media screen and (min-width : 751px) and (max-width : 991px)
+{
+    #accl_corps
+    {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    .text1{
+       
+        width: 90%; 
+    }
+    
+    .check
+    {
+        width: 150px;
+        margin-right: -150px;
+    }
+
+    .fa-check-circle
+    {
+        left: 60px;
+    }
+
+    .accl_menu--pic{
+        height: -webkit-fill-available;
+    }
+    
+}
+
+@media screen and (min-width : 912px)
+{
+    .accl_logo{
+        width: fit-content;
+    }
+
+    .accl_menu--pic{
+        height: -webkit-fill-available;
+    }
+
+    #accl_corps
+    {
+      width: 50%;
+      margin: auto;
+    }
+
+    .flex1
+    {
+        width: 70%;
+    }
+
+    .text2
+    {
+        width: 400px;
+    }
+
+    .check
+    {
+        margin-right: -120px;
+        width: 120px;
+    }
+
+    .fa-check-circle 
+    {
+        left: 50px;
+    }
+
+    .text1
+    {
+        width: 800px;
+    }
+
+    #accl-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    }
+
+    #footer-space{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+  }
+
+}
